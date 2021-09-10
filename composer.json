@@ -1,6 +1,6 @@
 {
-    "name": "hackphp/framework",
-    "description": "Hack PHP Framework",
+    "name": "hackphp/http",
+    "description": "Hack PHP Http Component",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -20,9 +20,6 @@
             "HackPHP\\Tests\\": "tests/"
         }
     },
-    "provide": {
-        "psr/container-implementation": "1.0.0"
-    },
     "require": {
         "psr/http-message": "^1.0",
         "psr/http-factory": "^1.0",
@@ -30,8 +27,7 @@
     },
     "require-dev": {
         "swoole/ide-helper": "dev-master",
-        "phpunit/phpunit": "9.5.x-dev",
-        "symfony/var-dumper": "5.4.x-dev"
+        "phpunit/phpunit": "9.5.x-dev"
     },
     "scripts": {
         "test": "./vendor/bin/phpunit --do-not-cache-result"
