@@ -1,0 +1,39 @@
+{
+    "name": "hackphp/framework",
+    "description": "Hack PHP Framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Samir",
+            "email": "gm.mohamedsamir@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "HackPHP\\Http\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HackPHP\\Tests\\": "tests/"
+        }
+    },
+    "provide": {
+        "psr/container-implementation": "1.0.0"
+    },
+    "require": {
+        "psr/http-message": "^1.0",
+        "psr/http-factory": "^1.0",
+        "psr/http-server-middleware": "^1.0"
+    },
+    "require-dev": {
+        "swoole/ide-helper": "dev-master",
+        "phpunit/phpunit": "9.5.x-dev",
+        "symfony/var-dumper": "5.4.x-dev"
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit --do-not-cache-result"
+    }
+}
